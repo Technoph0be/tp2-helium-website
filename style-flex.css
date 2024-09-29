@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-weight: 550;
+  font-size: 3.5rem;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #484df5;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  background: #202020;
+  color: rgb(250, 250, 250);
+  font-weight: 400;
+  padding: 20px 30px 0;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  margin-bottom: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+h3 {
+  font-size: 1.2rem;
+  font-weight: 550;
+}
+
+nav ul {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px auto;
+}
+.header-left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-left-container {
+  padding-right: 40px;
+  max-width: 550px;
+}
+.header-left h1 {
+  margin-bottom: 10px;
+}
+
+.header-left h2 {
+  margin-bottom: 5px;
+}
+.header-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+#Router-Image {
+  width: 100%;
+  min-width: 272px;
+  max-width: 650px;
+  height: auto;
+}
+
+.infos {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 -20px 10px;
+  background: rgb(10, 10, 10);
+  padding: 10px;
+  border-radius: 5px;
+}
+.infos h4 {
+  margin-bottom: 10px;
+}
+
+.infos-left {
+  display: flex;
+  justify-content: flex-start;
+  width: 33%;
+  min-width: 170px;
+}
+.infos-left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+button {
+  font-size: 0.7rem;
+  border: none;
+  background: #484df5;
+  color: white;
+  width: 150px;
+  padding: 10px 5px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin: 5px;
+  cursor: pointer;
+}
+.infos-right {
+  width: 67%;
+}
+.investors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.img-container img {
+  height: 60px;
+}
+
+/* <!-- ******************* MEDIA QUERIES ******************* --> */
+
+@media screen and (max-width: 750px) {
+  body {
+    justify-items: center;
+    align-items: center;
+  }
+  nav {
+    justify-content: space-between;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-left-container {
+    padding: 0;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .header-right {
+    width: auto;
+  }
+  #Router-Image {
+    max-height: 380px;
+    min-height: 250px;
+  }
+  .infos {
+    width: 100%;
+  }
+  .img-container img {
+    height: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header {
+    margin: 20px 0;
+  }
+  .infos {
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    min-width: 260px;
+  }
+  .infos-left {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .btn-container {
+    flex-direction: row;
+  }
+  button {
+    width: fit-content;
+  }
+  .infos-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+  .img-container {
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+  .img-container img {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  nav {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  nav h3 {
+    margin-bottom: 40px;
+  }
+  nav ul {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  nav h3 {
+    margin-bottom: 20px;
+  }
+  nav ul {
+    width: auto;
+    text-align: center;
+    flex-direction: column;
+    justify-items: center;
+  }
+  nav li {
+    margin-bottom: 20px;
+  }
+
+  .infos-left-container {
+    align-items: center;
+    justify-items: center;
+  }
+  .btn-container {
+    flex-direction: column;
+  }
+  button {
+    width: 150px;
+  }
+}
